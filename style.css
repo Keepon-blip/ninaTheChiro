@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-areas: 
+    "nav nav"
+    "leftside main"
+    "leftside footer"
+    ;
+}
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    float: left;
+}
+nav ul{
+}
+nav ul li {
+    list-style: none;
+    float: left;
+}
+nav ul li a{
+    text-decoration: none;
+}
+#leftside {
+    grid-area: leftside;
+}
+.chiro {
+    width: 100%;
+    height: 50%;
+}
+.spine {
+    width: 100%;
+    height: 50%;
+}
+#main {
+    grid-area: main;
+}
+#footer {
+    grid-area: footer;
+}

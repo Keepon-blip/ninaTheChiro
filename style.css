@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
 
 .container {
     display: grid;
@@ -10,7 +14,7 @@
     grid-template-areas: 
     "nav nav"
     "leftside main"
-    "leftside footer"
+    "footer footer"
     ;
 }
 nav {
@@ -18,8 +22,11 @@ nav {
     display: flex;
     justify-content: space-around;
     float: left;
-}
-nav ul{
+    background-color: aqua;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    
 }
 nav ul li {
     list-style: none;
@@ -27,13 +34,26 @@ nav ul li {
 }
 nav ul li a{
     text-decoration: none;
+    color: white;
 }
+.nav-links {
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    text-decoration: none;
+}
+
 #leftside {
     grid-area: leftside;
+    /* background-color: bisque; */
+    padding: 10px;
+    border-right: 1.5px solid gray;
 }
 .chiro {
     width: 100%;
-    height: 50%;
+    height: 60%;
+    border-radius: 5px;
 }
 .spine {
     width: 100%;
@@ -44,4 +64,8 @@ nav ul li a{
 }
 #footer {
     grid-area: footer;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
